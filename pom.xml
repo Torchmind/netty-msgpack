@@ -17,7 +17,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<!-- Artifact Information -->
-	<groupId>org.evilco.netty</groupId>
+	<groupId>com.torchmind.netty</groupId>
 	<artifactId>msgpack</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
@@ -28,8 +28,8 @@
 
 	<!-- Organization -->
 	<organization>
-		<name>Evil-Co</name>
-		<url>http://www.evil-co.org</url>
+		<name>Torchmind</name>
+		<url>http://www.torchmind.com</url>
 	</organization>
 
 	<!-- Contributors -->
@@ -37,11 +37,11 @@
 		<!-- Johannes "Akkarin" Donath -->
 		<contributor>
 			<name>Johannes Donath</name>
-			<email>johannesd@evil-co.com</email>
+			<email>johannesd@torchmind.com</email>
 			<url>http://www.johannes-donath.com</url>
 
-			<organization>Evil-Co</organization>
-			<organizationUrl>http://www.evil-co.org</organizationUrl>
+			<organization>Torchmind</organization>
+			<organizationUrl>http://www.torchmind.com</organizationUrl>
 		</contributor>
 	</contributors>
 
@@ -54,36 +54,24 @@
 		</license>
 	</licenses>
 
-	<!-- Issue Reporting -->
-	<issueManagement>
-		<url>https://evilco.atlassian.net/browse/MSGNET</url>
-		<system>JIRA</system>
-	</issueManagement>
-
-	<!-- CI Management -->
-	<ciManagement>
-		<url>https://evilco.atlassian.net/builds/browse/MSGNET</url>
-		<system>Bamboo</system>
-	</ciManagement>
-
 	<!-- SCM -->
 	<scm>
-		<url>https://github.com/LordAkkarin/netty-msgpack</url>
-		<connection>scm:git:git://github.com/LordAkkarin/netty-msgpack.git</connection>
-		<developerConnection>scm:git:git://git@github.com/LordAkkarin/netty-msgpack.git</developerConnection>
+		<url>https://github.com/Torchmind/netty-msgpack</url>
+		<connection>scm:git:git://github.com/Torchmind/netty-msgpack.git</connection>
+		<developerConnection>scm:git:git://git@github.com/Torchmind/netty-msgpack.git</developerConnection>
 		<tag>master</tag>
 	</scm>
 
 	<!-- Distribution -->
 	<distributionManagement>
 		<repository>
-			<id>basket</id>
-			<url>http://basket.cindyscats.com/content/repositories/releases/</url>
+			<id>torchmind</id>
+			<url>s3://maven.torchmind.com/release/</url>
 		</repository>
 
 		<snapshotRepository>
-			<id>basket</id>
-			<url>http://basket.cindyscats.com/content/repositories/snapshots/</url>
+			<id>torchmind</id>
+			<url>s3://maven.torchmind.com/snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
