@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.evilco.netty.msgpack.error;
+package com.torchmind.netty.msgpack.error;
 
 /**
  * @author Johannes Donath <johannesd@evil-co.com>

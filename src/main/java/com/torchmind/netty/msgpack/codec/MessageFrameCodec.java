@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.evilco.netty.msgpack.codec;
+package com.torchmind.netty.msgpack.codec;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;

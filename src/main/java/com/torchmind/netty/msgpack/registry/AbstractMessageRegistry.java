@@ -12,13 +12,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.evilco.netty.msgpack.registry;
+package com.torchmind.netty.msgpack.registry;
 
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import lombok.NonNull;
-import org.evilco.netty.msgpack.error.MessageRegistryException;
-import org.evilco.netty.msgpack.error.UnknownMessageException;
+import com.torchmind.netty.msgpack.error.MessageRegistryException;
+import com.torchmind.netty.msgpack.error.UnknownMessageException;
 
 /**
  * Provides a basic packet registry implementation.
@@ -66,8 +66,8 @@ public abstract class AbstractMessageRegistry implements IMessageRegistry {
 	}
 
 	/**
-	 * Alias for {@link org.evilco.netty.msgpack.registry.AbstractMessageRegistry#registerMessage(short, Class)}
-	 * @see {@link org.evilco.netty.msgpack.registry.AbstractMessageRegistry#registerMessage(short, Class)}
+	 * Alias for {@link AbstractMessageRegistry#registerMessage(short, Class)}
+	 * @see {@link AbstractMessageRegistry#registerMessage(short, Class)}
 	 */
 	protected void registerMessage (int messageID, @NonNull Class<?> messageType) {
 		this.registerMessage (((short) messageID), messageType);

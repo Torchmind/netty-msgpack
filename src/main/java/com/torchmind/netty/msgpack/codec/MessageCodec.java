@@ -12,9 +12,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.evilco.netty.msgpack.codec;
+package com.torchmind.netty.msgpack.codec;
 
 import com.google.common.base.Preconditions;
+import com.torchmind.netty.msgpack.registry.IMessageRegistry;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageCodec;
@@ -22,7 +23,6 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
-import org.evilco.netty.msgpack.registry.IMessageRegistry;
 import org.msgpack.MessagePack;
 
 import java.util.List;

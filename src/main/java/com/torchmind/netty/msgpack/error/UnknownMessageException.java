@@ -12,44 +12,44 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.evilco.netty.msgpack.error;
+package com.torchmind.netty.msgpack.error;
 
 /**
- * Base exception for message registry errors.
+ * Occurs when a message registration is not found in a registry.
  * @author Johannes Donath <johannesd@evil-co.com>
  * @copyright Copyright (C) 2014 Evil-Co <http://www.evil-co.com>
  */
-public abstract class MessageRegistryException extends Exception {
+public class UnknownMessageException extends MessageRegistryException {
 
 	/**
-	 * Constructs a new MessageRegistryException instance.
+	 * Constructs a new UnknownMessageException instance.
 	 */
-	public MessageRegistryException () {
+	public UnknownMessageException () {
 		super ();
 	}
 
 	/**
-	 * Constructs a new MessageRegistryException instance.
+	 * Constructs a new UnknownMessageException instance.
 	 * @param message The error message.
 	 */
-	public MessageRegistryException (String message) {
+	public UnknownMessageException (String message) {
 		super (message);
 	}
 
 	/**
-	 * Constructs a new MessageRegistryException instance.
+	 * Constructs a new UnknownMessageException instance.
 	 * @param message The error message.
 	 * @param cause The error cause.
 	 */
-	public MessageRegistryException (String message, Throwable cause) {
+	public UnknownMessageException (String message, Throwable cause) {
 		super (message, cause);
 	}
 
 	/**
-	 * Constructs a new MessageRegistryException instance.
+	 * Constructs a new UnknownMessageException instance.
 	 * @param cause The error cause.
 	 */
-	public MessageRegistryException (Throwable cause) {
+	public UnknownMessageException (Throwable cause) {
 		super (cause);
 	}
 }

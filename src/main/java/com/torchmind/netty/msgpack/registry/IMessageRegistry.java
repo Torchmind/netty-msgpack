@@ -12,9 +12,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.evilco.netty.msgpack.registry;
+package com.torchmind.netty.msgpack.registry;
 
-import org.evilco.netty.msgpack.error.MessageRegistryException;
+import com.torchmind.netty.msgpack.error.MessageRegistryException;
 
 /**
  * Declares required methods for message registries.
@@ -27,7 +27,7 @@ public interface IMessageRegistry {
 	 * Searches a message identifier based on a type.
 	 * @param messageType The message type.
 	 * @return The identifier.
-	 * @throws org.evilco.netty.msgpack.error.MessageRegistryException Occurs when a message type could not be localized.
+	 * @throws com.torchmind.netty.msgpack.error.MessageRegistryException Occurs when a message type could not be localized.
 	 */
 	public short getMessageID (Class<?> messageType) throws MessageRegistryException;
 
@@ -35,7 +35,7 @@ public interface IMessageRegistry {
 	 * Searches a message type based on an identifier.
 	 * @param messageID The message identifier.
 	 * @return The message type.
-	 * @throws org.evilco.netty.msgpack.error.MessageRegistryException Occurs when a message type could not be localized.
+	 * @throws com.torchmind.netty.msgpack.error.MessageRegistryException Occurs when a message type could not be localized.
 	 */
 	public Class<?> getMessageType (short messageID) throws MessageRegistryException;
 }

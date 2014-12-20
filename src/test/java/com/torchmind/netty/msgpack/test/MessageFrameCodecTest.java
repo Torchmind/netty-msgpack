@@ -12,11 +12,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.evilco.netty.msgpack.test;
+package com.torchmind.netty.msgpack.test;
 
+import com.torchmind.netty.msgpack.codec.MessageFrameCodec;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.embedded.EmbeddedChannel;
-import org.evilco.netty.msgpack.codec.MessageFrameCodec;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
