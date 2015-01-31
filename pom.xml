@@ -19,7 +19,7 @@
 	<!-- Artifact Information -->
 	<groupId>com.torchmind.netty</groupId>
 	<artifactId>msgpack</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 
 	<!-- Artifact Metadata -->
 	<name>Netty msgpack</name>
